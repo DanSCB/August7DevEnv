@@ -14,6 +14,8 @@
 		ACBD8B9328A05EB1005E21A9 /* Aug7DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD8B9228A05EB1005E21A9 /* Aug7DemoAppTests.swift */; };
 		ACBD8B9D28A05EB1005E21A9 /* Aug7DemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD8B9C28A05EB1005E21A9 /* Aug7DemoAppUITests.swift */; };
 		ACBD8B9F28A05EB1005E21A9 /* Aug7DemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBD8B9E28A05EB1005E21A9 /* Aug7DemoAppUITestsLaunchTests.swift */; };
+		ACBD8BAE28A06598005E21A9 /* TheSDK in Resources */ = {isa = PBXBuildFile; fileRef = ACBD8BAD28A06598005E21A9 /* TheSDK */; };
+		ACBD8BB128A065A7005E21A9 /* Aug5SDK in Frameworks */ = {isa = PBXBuildFile; productRef = ACBD8BB028A065A7005E21A9 /* Aug5SDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		ACBD8B9828A05EB1005E21A9 /* Aug7DemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Aug7DemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBD8B9C28A05EB1005E21A9 /* Aug7DemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aug7DemoAppUITests.swift; sourceTree = "<group>"; };
 		ACBD8B9E28A05EB1005E21A9 /* Aug7DemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aug7DemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACBD8BAD28A06598005E21A9 /* TheSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TheSDK; path = ../TheSDK; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBD8BB128A065A7005E21A9 /* Aug5SDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +78,12 @@
 		ACBD8B7528A05EAE005E21A9 = {
 			isa = PBXGroup;
 			children = (
+				ACBD8BAD28A06598005E21A9 /* TheSDK */,
 				ACBD8B8028A05EAF005E21A9 /* Aug7DemoApp */,
 				ACBD8B9128A05EB1005E21A9 /* Aug7DemoAppTests */,
 				ACBD8B9B28A05EB1005E21A9 /* Aug7DemoAppUITests */,
 				ACBD8B7F28A05EAF005E21A9 /* Products */,
+				ACBD8BAF28A065A7005E21A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +133,13 @@
 			path = Aug7DemoAppUITests;
 			sourceTree = "<group>";
 		};
+		ACBD8BAF28A065A7005E21A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +156,9 @@
 			dependencies = (
 			);
 			name = Aug7DemoApp;
+			packageProductDependencies = (
+				ACBD8BB028A065A7005E21A9 /* Aug5SDK */,
+			);
 			productName = Aug7DemoApp;
 			productReference = ACBD8B7E28A05EAF005E21A9 /* Aug7DemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBD8BAE28A06598005E21A9 /* TheSDK in Resources */,
 				ACBD8B8928A05EB0005E21A9 /* Preview Assets.xcassets in Resources */,
 				ACBD8B8628A05EB0005E21A9 /* Assets.xcassets in Resources */,
 			);
@@ -331,6 +348,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -345,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,6 +409,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -399,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -583,6 +602,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACBD8BB028A065A7005E21A9 /* Aug5SDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Aug5SDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACBD8B7628A05EAE005E21A9 /* Project object */;
 }
