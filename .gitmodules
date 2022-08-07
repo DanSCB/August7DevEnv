@@ -1,0 +1,4 @@
+[submodule "TheSDK"]
+	path = TheSDK
+	url = https://github.com/DanSCB/August5SDK2
+	branch = development
